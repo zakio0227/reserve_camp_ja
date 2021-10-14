@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Sample</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>サイト名</th>
+                <th><span id="day0"></span></th>
+                <th><span id="day1"></span></th>
+                <th><span id="day2"></span></th>
+                <th><span id="day3"></span></th>
+                <th><span id="day4"></span></th>
+                <th><span id="day5"></span></th> 
+                <th><span id="day6"></span></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td><span id="emptyOrFull"></span></td>
+                <td>taro.kirameki@example.com</td>
+                <td>09011112222</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>煌木 次郎</td>
+                <td>jiro.kirameki@example.com</td>
+                <td>09033334444</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>煌木 花子</td>
+                <td>hanako.kirameki@example.com</td>
+                <td>09055556666</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <div onclick="pushLastWeek()">
+                <button id="visibledLastWeek" class="btn btn-outline-primary" type="button">前週</button>
+            </div>
+            <div onclick="pushNextWeek()">
+              <button id="visibledNextWeek" class="btn btn-outline-primary" type="button">翌週</button>
+            </div>
+        </div>
+    <script type="text/javascript" src="test2.js"></script>
+  </body>
+</html>
